@@ -18,15 +18,26 @@ In VS Code, we can add [Babelrc](https://marketplace.visualstudio.com/items?item
 
 ```
 {
-  "preset": {
-    "es2015"
-  },
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "current"
+      }
+    }]
+  ],
   "plugins": [
     "transform-runtime"
   ]
 }
 ```
 
+Add eslint.
+```bash
+$ npm install -g eslint
+$ eslint --init
+```
+
+Add `.editconfig` and modify `.eslintrc.json`.
 
 ### References
 
