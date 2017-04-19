@@ -1,5 +1,7 @@
 
-Install babel to transpile es6 JavaScript.
+### Packages Applied
+
+Install `babel-cli` to transpile es6.
 
 ```bash
 $ yarn add -D babel-cli babel-preset-env
