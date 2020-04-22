@@ -4,31 +4,19 @@
 Install `babel-cli` to transpile es6.
 
 ```bash
-$ yarn add -D babel-cli babel-preset-env
+$ yarn add -D @babel/core @babel/cli
+$ yarn add core-js@2
 ```
 
-Install babel-runtime pollfill.
-```bash
-$ yarn add babel-runtime
-
-# http://babeljs.io/docs/plugins/transform-runtime/
-$ yarn add -D babel-plugin-transform-runtime
-```
-
-.babelrc
+.babel.config.json
 In VS Code, we can add [Babelrc](https://marketplace.visualstudio.com/items?itemName=waderyan.babelrc "Babelrc") plugin for easily editing `.babelrc`.
 
 ```
 {
   "presets": [
-    ["env", {
-      "targets": {
-        "node": "current"
-      }
+    ["@babel/preset-env", {
+      "useBuiltIns": "usage"
     }]
-  ],
-  "plugins": [
-    "transform-runtime"
   ]
 }
 ```
