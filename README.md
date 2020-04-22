@@ -34,12 +34,15 @@ In VS Code, we can add [Babelrc](https://marketplace.visualstudio.com/items?item
 ```
 
 Add eslint.
+
+Install `eslint` and `eslint-config-standard`
+
 ```bash
-$ npm install -g eslint
-$ eslint --init
+$ npx eslint --init
+#choice standard config.
 ```
 
-Add `.editconfig` and modify `.eslintrc.json`.
+Add `.editconfig`.
 
 ### References
 

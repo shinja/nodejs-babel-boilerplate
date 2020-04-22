@@ -1,5 +1,5 @@
 
-console.log('hello world');
+console.log('hello world')
 
 /**
  * We're using async/await feature of es2017 'async-to-generator'.
@@ -10,18 +10,18 @@ console.log('hello world');
  * babel-preset-env replaces es2015, es2016, es2017, latest.
  */
 
-function awaitFunc() {
+function awaitFunc () {
   return new Promise((resolve) => {
-    console.log('wait for 3 secs.');
+    console.log('wait for 3 secs.')
     setTimeout(() => {
-      resolve('time\' up');
-    }, 3000);
-  });
+      resolve('time\' up')
+    }, 3000)
+  })
 }
 
-async function asyncFunc() {
-  const rs = await awaitFunc();
-  console.log('asyncFunc', rs);
+async function asyncFunc () {
+  const rs = await awaitFunc()
+  console.log('asyncFunc', rs)
 }
 
-asyncFunc();
+asyncFunc()
